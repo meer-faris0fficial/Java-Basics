@@ -1,0 +1,36 @@
+
+import java.util.Scanner;
+
+public class Circle {
+    double radiusInMn;
+
+    public Circle(double radiusInMn) {
+        this.radiusInMn = radiusInMn;
+    }
+
+    double getCircumference(){
+        return 2 * radiusInMn * Math.PI;
+    }
+
+    double getArea(){
+        return Math.PI * Math.pow(radiusInMn, 2);
+    }
+
+    @Override
+    public String toString() {
+        return "Circle Props: Radius in mm:"+ radiusInMn 
+                            +" ,Circumference in mm:"+ getCircumference()
+                            +" Area in mm2: "+ getArea() +"";
+    }
+
+    
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Welcome to the world of circle\n");
+        System.out.print("Please enter your radius: ");
+        double radius = input.nextDouble();
+        Circle circle = new Circle(radius);
+        System.out.println(circle);
+    }
+}
