@@ -1,0 +1,10 @@
+abs():  absolute in other terms conjugate
+ceil(): Rounds up
+floor(): rounds down
+round(): round to nearest integer
+max(), min(): maximum and minimum of two numbers
+power(): calculate power
+sqrt(): calculate square root
+random(): random number generation
+exp(), log(): exponent and log function
+Trignometric function: sin(), cos(), tan()
